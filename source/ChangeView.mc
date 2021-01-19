@@ -47,8 +47,6 @@ class ChangeView extends WatchUi.View {
         dc.drawText(x, y, Graphics.FONT_NUMBER_THAI_HOT, text, Graphics.TEXT_JUSTIFY_CENTER);
         var textLenght = dc.getTextWidthInPixels(text, Graphics.FONT_NUMBER_THAI_HOT);
         var screenWidth = dc.getWidth();
-        System.println(textLenght);
-        System.println(screenWidth);
         var padding = (screenWidth-textLenght)/2;
         x = padding + dc.getTextWidthInPixels("00:", Graphics.FONT_NUMBER_THAI_HOT)*(Storage.getValue("changeTime_pos")-1);
         
