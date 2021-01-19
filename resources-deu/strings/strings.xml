@@ -1,0 +1,18 @@
+<strings>
+    <string id="AppName">Timer</string>
+    
+    <string id="Error">Bitte lassen Sie kein Feld leer und halten Sie sich an die Minimal- und Maximalwerte</string>
+    <string id="Select_timer">Timer Wählen</string>
+    <string id="Timer_1_name">Timer 1</string>
+    <string id="Timer_2_name">Timer 2</string>
+    <string id="Timer_3_name">Timer 3</string>
+    <string id="Time_In_Sec">Zeit (in sekunden)</string>
+    
+    <string id="Timer_Menu_Select">Auswählen</string>
+    <string id="Timer_Menu_Edit">Bearbeiten</string>
+    
+    <string id="Timer_Saved">Gespeichert</string>
+    
+    <string id="Timer_Menu_Pause">Pause</string>
+    <string id="Timer_Menu_Reset">Zurücksetzten</string>
+</strings>
