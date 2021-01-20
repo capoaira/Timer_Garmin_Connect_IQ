@@ -4,22 +4,22 @@ using Toybox.Timer;
 using Toybox.Application as App;
 
 class SavedView extends WatchUi.View {
-	var Storage = App.Storage;
-	var timer = new Timer.Timer();
+    var Storage = App.Storage;
+    var timer = new Timer.Timer();
 
     function initialize() {
         View.initialize();
     }
     
     function timerCallback() {
-    	timer.stop();
-    	
-   		var menu = new WatchUi.Menu();
+        timer.stop();
+        
+           var menu = new WatchUi.Menu();
         menu.addItem(WatchUi.loadResource(Rez.Strings.Timer_Menu_Select), :Select);
         menu.addItem(WatchUi.loadResource(Rez.Strings.Timer_Menu_Edit), :Edit);
         menu.setTitle(App.getApp().getProperty("timer_"+Storage.getValue("setupTimer")+"_name"));
         WatchUi.pushView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
-	}
+    }
 
     // Load your resources here
     function onLayout(dc) {

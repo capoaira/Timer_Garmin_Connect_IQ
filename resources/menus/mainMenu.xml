@@ -1,5 +1,0 @@
-<menu id="MainMenu" title="@Strings.Select_timer">
-    <menu-item id="Timer1" label="@Strings.Timer_1_name" />
-    <menu-item id="Timer2" label="@Strings.Timer_2_name" />
-    <menu-item id="Timer3" label="@Strings.Timer_3_name" />
-</menu>

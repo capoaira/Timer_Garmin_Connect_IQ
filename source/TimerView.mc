@@ -3,7 +3,7 @@ using Toybox.Application as App;
 using Toybox.Graphics;
 
 class TimerView extends WatchUi.View {
-	var Storage = App.Storage;
+    var Storage = App.Storage;
 
     function initialize() {
         View.initialize();
@@ -48,11 +48,11 @@ class TimerView extends WatchUi.View {
     function onHide() {
     }
 
-	function percentInPx(percent) {
-    	return System.getDeviceSettings().screenWidth / 100 * percent;
+    function percentInPx(percent) {
+        return System.getDeviceSettings().screenWidth / 100 * percent;
     }
     
     function padLeft(s) {
-    	return s.toString().length() == 1 ? "0"+s : s;
+        return s.toString().length() == 1 ? "0"+s : s;
     }
 }

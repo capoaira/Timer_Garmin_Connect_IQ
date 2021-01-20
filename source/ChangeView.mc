@@ -3,7 +3,7 @@ using Toybox.Application as App;
 using Toybox.Graphics;
 
 class ChangeView extends WatchUi.View {
-	var Storage = App.Storage;
+    var Storage = App.Storage;
     var actualTimer = Storage.getValue("setupTimer");
 
     function initialize() {
@@ -41,7 +41,7 @@ class ChangeView extends WatchUi.View {
         y = percentInPx(50);
         var time = Storage.getValue("changeTime");
         for (var i=0; i<3; i++) {
-        	time[i] = padLeft(time[i]);
+            time[i] = padLeft(time[i]);
         }
         text = Lang.format("$1$:$2$:$3$", time);
         dc.drawText(x, y, Graphics.FONT_NUMBER_THAI_HOT, text, Graphics.TEXT_JUSTIFY_CENTER);
@@ -59,11 +59,11 @@ class ChangeView extends WatchUi.View {
     function onHide() {
     }
 
-	function percentInPx(percent) {
-    	return System.getDeviceSettings().screenWidth / 100 * percent;
+    function percentInPx(percent) {
+        return System.getDeviceSettings().screenWidth / 100 * percent;
     }
     
     function padLeft(s) {
-    	return s.toString().length() == 1 ? "0"+s : s;
+        return s.toString().length() == 1 ? "0"+s : s;
     }
 }

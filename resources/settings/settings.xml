@@ -1,33 +1,33 @@
 <resources>
     <properties>
-    	<property id="timer_1_name" type="string">Timer 1</property>
-    	<property id="timer_1_time" type="number">300</property>
-    	<property id="timer_2_name" type="string">Timer 2</property>
-    	<property id="timer_2_time" type="number">1200</property>
-    	<property id="timer_3_name" type="string">Timer 3</property>
-    	<property id="timer_3_time" type="number">7200</property>
+        <property id="timer_1_name" type="string">Timer 1</property>
+        <property id="timer_1_time" type="number">300</property>
+        <property id="timer_2_name" type="string">Timer 2</property>
+        <property id="timer_2_time" type="number">1200</property>
+        <property id="timer_3_name" type="string">Timer 3</property>
+        <property id="timer_3_time" type="number">7200</property>
     </properties>
 
-	<settings>
-	    <setting propertyKey="@Properties.timer_1_name" title="@Strings.Timer_1_name">
-	        <settingConfig type="alphaNumeric" errorMessage="@Strings.Error" required="true" maxLength="15" />
-	    </setting>
-	    <setting propertyKey="@Properties.timer_1_time" title="@Strings.Time_In_Sec">
-	        <settingConfig type="numeric" errorMessage="@Strings.Error" required="true" min="0" max="86399" />
-	    </setting>
-	    
-	    <setting propertyKey="@Properties.timer_2_name" title="@Strings.Timer_2_name">
-	        <settingConfig type="alphaNumeric" errorMessage="@Strings.Error" required="true" maxLength="15" />
-	    </setting>
-	    <setting propertyKey="@Properties.timer_2_time" title="@Strings.Time_In_Sec">
-	        <settingConfig type="numeric" errorMessage="@Strings.Error" required="true" min="0" max="86399" />
-	    </setting>
-	    
-	    <setting propertyKey="@Properties.timer_3_name" title="@Strings.Timer_3_name">
-	        <settingConfig type="alphaNumeric" errorMessage="@Strings.Error" required="true" maxLength="15"  />
-	    </setting>
-	    <setting propertyKey="@Properties.timer_3_time" title="@Strings.Time_In_Sec">
-	        <settingConfig type="numeric" errorMessage="@Strings.Error" required="true" min="0" max="86399" />
-	    </setting>
-	</settings>
+    <settings>
+        <setting propertyKey="@Properties.timer_1_name" title="@Strings.Timer_1_name">
+            <settingConfig type="alphaNumeric" errorMessage="@Strings.Error" required="true" maxLength="15" />
+        </setting>
+        <setting propertyKey="@Properties.timer_1_time" title="@Strings.Time_In_Sec">
+            <settingConfig type="numeric" errorMessage="@Strings.Error" required="true" min="0" max="86399" />
+        </setting>
+        
+        <setting propertyKey="@Properties.timer_2_name" title="@Strings.Timer_2_name">
+            <settingConfig type="alphaNumeric" errorMessage="@Strings.Error" required="true" maxLength="15" />
+        </setting>
+        <setting propertyKey="@Properties.timer_2_time" title="@Strings.Time_In_Sec">
+            <settingConfig type="numeric" errorMessage="@Strings.Error" required="true" min="0" max="86399" />
+        </setting>
+        
+        <setting propertyKey="@Properties.timer_3_name" title="@Strings.Timer_3_name">
+            <settingConfig type="alphaNumeric" errorMessage="@Strings.Error" required="true" maxLength="15"  />
+        </setting>
+        <setting propertyKey="@Properties.timer_3_time" title="@Strings.Time_In_Sec">
+            <settingConfig type="numeric" errorMessage="@Strings.Error" required="true" min="0" max="86399" />
+        </setting>
+    </settings>
 </resources>
