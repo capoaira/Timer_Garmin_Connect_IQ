@@ -13,12 +13,12 @@ class SavedView extends WatchUi.View {
     
     function timerCallback() {
         timer.stop();
-        
-           var menu = new WatchUi.Menu();
+
+        var menu = new WatchUi.Menu();
         menu.addItem(WatchUi.loadResource(Rez.Strings.Timer_Menu_Select), :Select);
         menu.addItem(WatchUi.loadResource(Rez.Strings.Timer_Menu_Edit), :Edit);
         menu.setTitle(App.getApp().getProperty("timer_"+Storage.getValue("setupTimer")+"_name"));
-        WatchUi.pushView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
+        WatchUi.switchToView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
     }
 
     // Load your resources here
