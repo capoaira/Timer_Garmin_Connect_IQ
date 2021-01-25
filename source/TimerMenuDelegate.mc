@@ -13,9 +13,9 @@ class TimerMenuDelegate extends WatchUi.MenuInputDelegate {
         if (item == :Select) {
             Storage.setValue("actualTimer",  Storage.getValue("setupTimer"));
             Storage.setValue("count", 0);
-            WatchUi.pushView(new TimerView(), new TimerDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(new TimerView(), new TimerDelegate(), WatchUi.SLIDE_UP);
         } else if (item == :Edit) {
-            WatchUi.pushView(new ChangeView(), new ChangeDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(new ChangeView(), new ChangeDelegate(), WatchUi.SLIDE_UP);
         }
     }
 }

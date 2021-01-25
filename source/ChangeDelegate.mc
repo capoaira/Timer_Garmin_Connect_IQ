@@ -17,7 +17,7 @@ class ChangeDelegate extends WatchUi.BehaviorDelegate {
                var min = Storage.getValue("changeTime")[1];
                var sec = Storage.getValue("changeTime")[2];
                App.getApp().setProperty("timer_"+Storage.getValue("setupTimer")+"_time", h*60*60+min*60+sec);
-            WatchUi.pushView(new SavedView(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(new SavedView(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_UP);
         } else {
             pos++;
             Storage.setValue("changeTime_pos", pos);

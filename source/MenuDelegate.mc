@@ -16,15 +16,15 @@ class MenuDelegate extends WatchUi.MenuInputDelegate {
         if (item == :Timer1) {
             Storage.setValue("setupTimer", 1);
             menu.setTitle(App.getApp().getProperty("timer_1_name"));
-            WatchUi.pushView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
         } else if (item == :Timer2) {
             Storage.setValue("setupTimer", 2);
             menu.setTitle(App.getApp().getProperty("timer_2_name"));
-            WatchUi.pushView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
         } else if (item == :Timer3) {
             Storage.setValue("setupTimer", 3);
             menu.setTitle(App.getApp().getProperty("timer_3_name"));
-            WatchUi.pushView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(menu, new TimerMenuDelegate(), WatchUi.SLIDE_UP);
         }
     }
 }

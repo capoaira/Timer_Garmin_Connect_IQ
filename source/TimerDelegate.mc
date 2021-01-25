@@ -71,7 +71,7 @@ class TimerDelegate extends WatchUi.BehaviorDelegate {
             var menu = new WatchUi.Menu();
             menu.addItem(WatchUi.loadResource(Rez.Strings.Timer_Menu_Pause), :Pause);
             menu.addItem(WatchUi.loadResource(Rez.Strings.Timer_Menu_Reset), :Reset);
-            WatchUi.pushView(menu, new StopDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(menu, new StopDelegate(), WatchUi.SLIDE_UP);
         }
     }
     
@@ -81,6 +81,6 @@ class TimerDelegate extends WatchUi.BehaviorDelegate {
         menu.addItem(App.getApp().getProperty("timer_1_name"), :Timer1);
         menu.addItem(App.getApp().getProperty("timer_2_name"), :Timer2);
         menu.addItem(App.getApp().getProperty("timer_3_name"), :Timer3);
-        WatchUi.pushView(menu, new MenuDelegate(), WatchUi.SLIDE_UP);
+        WatchUi.switchToView(menu, new MenuDelegate(), WatchUi.SLIDE_UP);
     }
 }

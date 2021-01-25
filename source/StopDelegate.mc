@@ -11,9 +11,9 @@ class StopDelegate extends WatchUi.MenuInputDelegate {
 
     function onMenuItem(item) {
         if (item == :Pause) {
-            WatchUi.pushView(new TimerView(), new TimerDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(new TimerView(), new TimerDelegate(), WatchUi.SLIDE_UP);
         } else if (item == :Reset) {
-            WatchUi.pushView(new TimerView(), new TimerDelegate(), WatchUi.SLIDE_UP);
+            WatchUi.switchToView(new TimerView(), new TimerDelegate(), WatchUi.SLIDE_UP);
             Storage.setValue("count", 0);
         }
     }
