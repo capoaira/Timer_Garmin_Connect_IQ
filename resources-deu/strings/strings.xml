@@ -15,4 +15,9 @@
     
     <string id="Timer_Menu_Pause">Pause</string>
     <string id="Timer_Menu_Reset">Zurücksetzten</string>
+    
+    <string id="Font_Size">Schriftgröße</string>
+    <string id="Font_Size_Small">Klein</string>
+    <string id="Font_Size_Medium">Mittel</string>
+    <string id="Font_Size_Big">Groß</string>
 </strings>

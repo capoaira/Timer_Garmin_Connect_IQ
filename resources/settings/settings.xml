@@ -6,6 +6,7 @@
         <property id="timer_2_time" type="number">1200</property>
         <property id="timer_3_name" type="string">Timer 3</property>
         <property id="timer_3_time" type="number">7200</property>
+        <property id="font_size" type="number">8</property>
     </properties>
 
     <settings>
@@ -28,6 +29,14 @@
         </setting>
         <setting propertyKey="@Properties.timer_3_time" title="@Strings.Time_In_Sec">
             <settingConfig type="numeric" errorMessage="@Strings.Error" required="true" min="0" max="86399" />
+        </setting>
+
+        <setting propertyKey="@Properties.font_size" title="@Strings.Font_Size">
+        	<settingConfig type="list">
+	            <listEntry value="6">@Strings.Font_Size_Small</listEntry>
+	            <listEntry value="7">@Strings.Font_Size_Medium</listEntry>
+	            <listEntry value="8">@Strings.Font_Size_Big</listEntry>
+	        </settingConfig>
         </setting>
     </settings>
 </resources>

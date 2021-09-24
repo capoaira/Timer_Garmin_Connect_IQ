@@ -44,13 +44,13 @@ class ChangeView extends WatchUi.View {
             time[i] = padLeft(time[i]);
         }
         text = Lang.format("$1$:$2$:$3$", time);
-        dc.drawText(x, y, Graphics.FONT_NUMBER_THAI_HOT, text, Graphics.TEXT_JUSTIFY_CENTER);
-        var textLenght = dc.getTextWidthInPixels(text, Graphics.FONT_NUMBER_THAI_HOT);
+        dc.drawText(x, y, App.getApp().getProperty("font_size"), text, Graphics.TEXT_JUSTIFY_CENTER);
+        var textLenght = dc.getTextWidthInPixels(text, App.getApp().getProperty("font_size"));
         var screenWidth = dc.getWidth();
         var padding = (screenWidth-textLenght)/2;
-        x = padding + dc.getTextWidthInPixels("00:", Graphics.FONT_NUMBER_THAI_HOT)*(Storage.getValue("changeTime_pos")-1);
+        x = padding + dc.getTextWidthInPixels("00:", App.getApp().getProperty("font_size"))*(Storage.getValue("changeTime_pos")-1);
         
-        dc.drawText(x, y+11, Graphics.FONT_NUMBER_THAI_HOT, ".....", Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(x, y+11, App.getApp().getProperty("font_size"), ".....", Graphics.TEXT_JUSTIFY_LEFT);
     }
 
     // Called when this View is removed from the screen. Save the

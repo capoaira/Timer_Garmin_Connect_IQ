@@ -39,7 +39,7 @@ class TimerView extends WatchUi.View {
         time -= min;
         var h = (time/60/60)%60;
         text = Lang.format("$1$:$2$:$3$", [padLeft(h), padLeft(min), padLeft(sec)]);
-        dc.drawText(x, y, Graphics.FONT_NUMBER_THAI_HOT, text, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(x, y, App.getApp().getProperty("font_size"), text, Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     // Called when this View is removed from the screen. Save the
